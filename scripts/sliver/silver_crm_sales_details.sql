@@ -1,5 +1,5 @@
 /* 
-This code transforms/cleans and inserts the cleaned date into the Silve CRM Sales Table
+This code transforms/cleans and inserts the cleaned date into the Silver CRM Sales Table
 */
 INSERT INTO silver.crm_sales_details (
 	sls_ord_num,
