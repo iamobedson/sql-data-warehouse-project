@@ -2,6 +2,9 @@
 This Script inserts cleaned & transformed data from the Bronze ERP Locations table 
 into the Silver ERP locations table  
 */
+Print '>> Truncate table to avoid duplication'
+TRUNCATE TABLE silver.erp_loc_a101;
+Print '>> Insert cleaned data into: Silver-erp_loc table'
 INSERT INTO silver.erp_loc_a101
 (cid, cntry)
 SELECT
