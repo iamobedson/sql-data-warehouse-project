@@ -1,6 +1,9 @@
 /*
 This script cleans and inserts data into the ERP Cust table
 */
+Print '>> Truncate table to avoid duplication'
+TRUNCATE TABLE silver.erp_cust_az12;
+Print '>> Insert cleaned data into: Silver.erp_cust_az12'
 INSERT INTO silver.erp_cust_az12(
 cid,
 bdate,
